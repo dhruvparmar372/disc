@@ -1,0 +1,22 @@
+<html>
+
+  <head>
+    <title>Disc</title>
+    <style>
+      body,html { height : 100%; margin : 0; }
+    </style>
+  </head>
+
+  <body></body>
+
+  <script type='text/javascript'>
+    var map = ['#1abc9c', '#f1c40f', '#2ecc71', '#f39c12', '#e74c3c', '#d35400', '#ecf0f1', '#34495e', '#27ae60', '#C8F7C5', '#F2784B'];
+    function disc() {
+      var index = Math.floor(Math.random()*map.length);
+      document.body.style.background = map[index];
+      setTimeout(disc, (Math.random()*50+350));
+    }
+    disc();
+  </script>
+
+</html>
